@@ -1,11 +1,16 @@
-import React from 'react'
+"use client";
 
-function Pomodoro() {
+import React from "react";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+
+export default function Pomodoro() {
   return (
-    <div>
-      Pomodoro?
-    </div>
-  )
+    <main>
+      <div style={{ width: 120, height: 120 }}>
+        <CircularProgressbar value={75} text="25:00" />
+      </div>
+    </main>
+    
+  );
 }
-
-export default Pomodoro
