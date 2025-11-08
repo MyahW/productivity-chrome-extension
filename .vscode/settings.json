@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Panda Syntax",
+    "editor.tabSize": 5,
+    "editor.mouseWheelZoom": true,
+    "liveServer.settings.CustomBrowser": "chrome"
+}

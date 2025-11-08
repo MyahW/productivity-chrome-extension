@@ -18,6 +18,8 @@
 
 @media (prefers-color-scheme: dark) {
   .page {
+    width: 400px;      /* 👈 Popup width */
+    height: 600px;
     --gray-rgb: 255, 255, 255;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
     --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
@@ -28,6 +30,7 @@
 }
 
 .main {
+  background-color: "#30384b";
   display: flex;
   flex-direction: column;
   gap: 32px;
