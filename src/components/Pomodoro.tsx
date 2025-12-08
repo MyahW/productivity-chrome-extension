@@ -75,23 +75,28 @@ export default function Pomodoro() {
   ? workMinutes * 60 : breakMinutes * 60;
  const percentage = Math.round(secondsLeft / totalSeconds * 100);
 
- {/*Numbe rof Minutes and Seconds Left*/}
+ {/*Number of Hours, Minutes and Seconds Left*/}
+  
   const minutes = Math.floor(secondsLeft / 60); // if 44.8 become 44
-  let seconds = secondsLeft % 60;
-  if(seconds < 10){
-    seconds = '0' + seconds;
-  }
+  const hours = Math.floor(minutes / 60); 
+  const convertMins = minutes % 60;
+  const seconds = secondsLeft % 60;
+  
+  const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds.toString();
+  const formattedMinutes = convertMins < 10 ? `0${convertMins}` : convertMins.toString();
+  const formattedHours = hours < 10 ? `0${hours}` : hours.toString();
 
   return (
     <main>
       <div style={{display: "flex", flexDirection: "row"}}>
         <div style={{display: "flex", flexDirection: "column"}}>
           <div style={{ width: 110, height: 110}}>
-            <CircularProgressbar value={percentage} text={minutes + ' : ' + seconds} 
+            <CircularProgressbar value={percentage} text={formattedHours + ' : ' + formattedMinutes + ' : ' + formattedSeconds} 
             styles={buildStyles({
               textColor: "#30384bff",
               pathColor: mode === 'work' ? red : blue,
               trailColor: mode == 'work' ? redFade : blueFade,
+              textSize: '17px',
             }) }/>
           </div>
           <div 
