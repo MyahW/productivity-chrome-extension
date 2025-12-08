@@ -1,5 +1,4 @@
 
-{/*@import "tailwindcss";*/}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -7,7 +6,6 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-
 }
 
 body {
@@ -33,8 +31,45 @@ button{
   display: inline-block;
 }
 
-#pomoBtn{
-  
+label{
+  display: block;
+}
+
+.sliderRoot {
+  height: 100px;
+  width: 14px;
+  display: flex;
+  touch-action: none;
+}
+
+.sliderTrack {
+  background-color: #e1d1ebff;
+  border-radius: 999px;
+  flex: 1;
+  position: relative;
+}
+
+.breakTrack {
+  background-color: #D1EBEA;
+}
+
+.sliderRange {
+  background: #a5075bff;
+  border-radius: 999px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.breakRange {
+  background: #07a59dff;
+}
+
+.sliderThumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #a5075bff;
+  cursor: grab;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -119,8 +154,6 @@ button{
   --sidebar-ring: oklch(0.709 0.01 56.259);
 
 }
-
-
 
 @layer base {
   * {

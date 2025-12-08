@@ -7,14 +7,16 @@ function Navbar() {
     <nav style={{display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
-                justifyContent: "space-between",
-                width: "260px",
+                justifyContent: "center",
+                width: "200px",
+                gap: "8px",
                 padding: "2px 0",
+                marginTop: "15px"
                 }}>
 
-        <Link href='/' style={{ display: "block" }}>Pomodoro</Link>
-        <Link href='/notes' style={{ display: "block" }}>Notes</Link>
-        <Link href='/calculator' style={{ display: "block" }}>Calculator</Link>
+      <Link href='/' style={{ display: "block" }}>Pomodoro</Link>
+      <Link href='/notes' style={{ display: "block" }}>Notes</Link>
+      <Link href='/calculator' style={{ display: "block" }}>Calculator</Link>
     </nav>
     
   );

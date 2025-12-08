@@ -12,6 +12,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@radix-ui/react-slider": "^1.3.6",
     "@radix-ui/react-slot": "^1.2.4",
     "@tailwindcss/postcss": "^4.1.17",
     "class-variance-authority": "^0.7.1",
@@ -23,6 +24,8 @@
     "react-circular-progressbar": "^2.2.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",
+    "react-swiper": "^0.1.5",
+    "swiper": "^12.0.3",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {

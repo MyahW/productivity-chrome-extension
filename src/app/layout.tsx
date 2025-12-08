@@ -28,15 +28,16 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div>
           <main style={{
-            backgroundColor: "#30384b",
-            width: "300px",
-            height: "400px",
+            backgroundColor: "#fff6f6ff",
+            width: "360px",
+            height: "300px",
             border: "1px solid black",
-            color: "white",
+            color: "#30384bff",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "space-between"}}>
+            }}>
+            <Navbar/>
             {children}
           </main>
         </div>
